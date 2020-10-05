@@ -15,5 +15,6 @@ workflows:
           source: true
     scripts:
       - $dart pub get
-      - $FLUTTER_ROOT/bin/dart --help
-      - $FLUTTER_ROOT/bin/dart compile --help
+      - $FLUTTER_ROOT/bin/dart compile exe bin/main.dart
+      - ls
+      - ls bin
