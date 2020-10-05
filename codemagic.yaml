@@ -1,15 +1,18 @@
 workflows:
-    dart-command-line-tool:
-        name: Dart Command Line Tool
-        environment:
-          flutter: 1.22.0
-        triggering:
-          events:
-            - tag
-          branch_patterns:
-            - pattern: '*master*'
-              include: true
-              source: true
-        scripts:
-          - dart pub get
-          - dart compile --help
+  dart-command-line-tool:
+    max_build_duration: 30
+    name: Dart Command Line Tool
+    environment:
+      flutter: 1.22.0
+      xcode: latest
+      cocoapods: default
+    triggering:
+      events:
+        - tag
+      branch_patterns:
+        - pattern: '*master*'
+          include: true
+          source: true
+    scripts:
+      - /usr/local/bin/dart pub get
+      - /usr/local/bin/dart compile --help
