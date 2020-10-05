@@ -2,7 +2,7 @@ workflows:
     dart-command-line-tool:
         name: Dart Command Line Tool
         environment:
-            flutter: 1.22.0
+          flutter: 1.22.0
         triggering:
           events:
             - tag
@@ -11,4 +11,5 @@ workflows:
               include: true
               source: true
         scripts:
-            - dart compile --help
+          - dart pub get
+          - dart compile --help
