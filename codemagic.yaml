@@ -4,11 +4,11 @@ workflows:
         environment:
             flutter: 1.22.0
         triggering:
-        events:
-          - tag
-        branch_patterns:
-          - pattern: '*master*'
-            include: true
-            source: true
+          events:
+            - tag
+          branch_patterns:
+            - pattern: '*master*'
+              include: true
+              source: true
         scripts:
             - dart compile --help
