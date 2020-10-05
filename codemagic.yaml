@@ -14,8 +14,6 @@ workflows:
           include: true
           source: true
     scripts:
-      - ls $FLUTTER_ROOT
-      - ls $FLUTTER_ROOT/bin
-      - flutter packages pub get
       - $dart pub get
-      - $dart compile --help
+      - $FLUTTER_ROOT/bin/dart --help
+      - $FLUTTER_ROOT/bin/dart compile --help
