@@ -14,5 +14,6 @@ workflows:
           include: true
           source: true
     scripts:
-      - cd $FLUTTER_ROOT && cd bin && dart pub get
-      - cd $FLUTTER_ROOT && cd bin && dart compile --help
+      - ls $FLUTTER_ROOT
+      - $dart pub get
+      - $dart compile --help
