@@ -22,7 +22,7 @@ Options:
                             --files a,b 
                             OR 
                             --files a --files b
-                            allow ext.: apk, apks, exe, zip, rar, obb, 7z, r00, r0
+                            allowed ext.: apk, apks, exe, zip, rar, obb, 7z, r00, r0
                             max files size: 192Mb
 -V, --version-in-post       What to paste in "version" field in the post
 -S, --short-description     What to paste in "short description" field in post
