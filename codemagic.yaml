@@ -14,5 +14,5 @@ workflows:
           include: true
           source: true
     scripts:
-      - /usr/local/bin/dart pub get
-      - /usr/local/bin/dart compile --help
+      - cd $FLUTTER_ROOT && cd bin && dart pub get
+      - cd $FLUTTER_ROOT && cd bin && dart compile --help
