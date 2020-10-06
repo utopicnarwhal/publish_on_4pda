@@ -185,9 +185,9 @@ String _genNewFileName(String filePath, String packageName, String version) {
       if (filenameWithoutExt.contains('x86_64')) {
         newFileName = newFileName + '_x86_64';
       } else if (filenameWithoutExt.contains('arm64-v8a')) {
-        newFileName = newFileName + 'arm8';
+        newFileName = newFileName + '_arm8';
       } else {
-        newFileName = newFileName + 'arm7';
+        newFileName = newFileName + '_arm7';
       }
     }
 

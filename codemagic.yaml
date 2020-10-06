@@ -6,15 +6,3 @@ workflows:
       flutter: 1.22.0
       xcode: latest
       cocoapods: default
-    triggering:
-      events:
-        - tag
-      branch_patterns:
-        - pattern: '*master*'
-          include: true
-          source: true
-    scripts:
-      - $dart pub get
-      - $FLUTTER_ROOT/bin/dart compile exe bin/main.dart
-      - ls
-      - ls bin
